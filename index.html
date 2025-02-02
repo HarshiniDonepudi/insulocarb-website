@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulocarb - AI-Powered Diabetes Management Research</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-blue-900/90 z-50 mobile-menu hidden lg:hidden">
+        <div class="p-4">
+            <button onclick="toggleMobileMenu()" class="text-white float-right">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="flex flex-col space-y-4 mt-16 items-center">
+                <a href="#motivation" class="text-white text-lg">Our Story</a>
+                <a href="#research" class="text-white text-lg">Research</a>
+                <a href="#team" class="text-white text-lg">Team</a>
+                <a href="#partnership" class="text-white text-lg">Partnership</a>
+                <button class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300">Contact Us</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-effect shadow-lg fixed w-full z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">Insulocarb</span>
+                </div>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#motivation" class="nav-link">Our Story</a>
+                    <a href="#research" class="nav-link">Research</a>
+                    <a href="#team" class="nav-link">Team</a>
+                    <a href="#partnership" class="nav-link">Partnership</a>
+                    <button class="btn-primary">Contact Us</button>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="absolute inset-0 bg-blue-900/50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white mobile-padding animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Revolutionizing Diabetes Management for Children</h1>
+                    <p class="text-xl mb-8 text-blue-100">In partnership with Diabetic Child Society Visakhapatnam, we're developing AI-powered solutions to improve the lives of children with Type 1 diabetes.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="btn-hero-primary">Learn More</button>
+                        <button class="btn-hero-secondary">Join Our Mission</button>
+                    </div>
+                </div>
+                <div class="flex justify-center animate-scale-in">
+                    <div class="relative float-animation">
+                        <div class="absolute inset-0 bg-blue-600 rounded-full filter blur-3xl opacity-20 transform rotate-45"></div>
+                        <img src="/api/placeholder/600/400" alt="Insulocarb Research Demo" class="relative rounded-2xl shadow-2xl responsive-img"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg class="w-full h-24 fill-current text-gray-50" viewBox="0 0 1440 74" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 24C120 24 180 0 360 0C540 0 600 24 720 24C840 24 900 0 1080 0C1260 0 1320 24 1440 24V74H0V24Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-blue-600 mb-2 counter" data-target="100">0+</div>
+                    <p class="text-gray-600 font-medium">Children Supported</p>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-blue-600 mb-2 counter" data-target="85">0%</div>
+                    <p class="text-gray-600 font-medium">Accuracy Rate</p>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">24/7</div>
+                    <p class="text-gray-600 font-medium">Support System</p>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-blue-600 mb-2 counter" data-target="3">0+</div>
+                    <p class="text-gray-600 font-medium">Research Papers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Motivation Section -->
+<section id="motivation" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">Our Motivation</h2>
+        <div class="max-w-3xl mx-auto">
+            <div class="space-y-8 animate-on-scroll">
+                <div class="card-hover p-8 bg-gray-50 rounded-xl shadow-md">
+                    <p class="text-gray-600 text-lg">The journey of Insulocarb began when we witnessed the daily challenges faced by children with Type 1 diabetes. Managing insulin doses, tracking food intake, and predicting glucose responses can be overwhelming, especially for young patients and their families.</p>
+                </div>
+                <div class="card-hover p-8 bg-gray-50 rounded-xl shadow-md">
+                    <p class="text-gray-600 text-lg">Through our partnership with Diabetic Child Society Visakhapatnam, we discovered that many children struggle with maintaining stable blood glucose levels due to the complexity of diabetes management. This inspired us to develop an innovative solution that combines artificial intelligence with augmented reality to simplify and improve diabetes care.</p>
+                </div>
+                <div class="card-hover p-8 bg-gray-50 rounded-xl shadow-md">
+                    <p class="text-gray-600 text-lg">Our mission is to empower children with Type 1 diabetes and their caregivers with intelligent tools that make diabetes management more accurate, less stressful, and more integrated into their daily lives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Our Story</h2>
+            <p class="text-gray-600 text-lg mb-12">The journey of Insulocarb began in the vibrant tech community of Visakhapatnam, where three passionate innovators came together with a shared vision: to revolutionize diabetes management for children using cutting-edge technology.</p>
+            
+            <!-- Timeline -->
+            <div class="relative py-8">
+                <div class="absolute left-0 w-full h-0.5 bg-blue-100 top-1/2 transform -translate-y-1/2"></div>
+                <div class="relative z-10 flex justify-between max-w-2xl mx-auto">
+                    <div class="bg-white px-4 card-hover">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold transform transition-transform hover:scale-110">2023</div>
+                        <p class="text-sm mt-2 font-medium">Project Started</p>
+                    </div>
+                    <div class="bg-white px-4 card-hover">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold transform transition-transform hover:scale-110">2024</div>
+                        <p class="text-sm mt-2 font-medium">Partnership</p>
+                    </div>
+                    <div class="bg-white px-4 card-hover">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold transform transition-transform hover:scale-110">2025</div>
+                        <p class="text-sm mt-2 font-medium">Research Phase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Founders Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+            <div class="bg-gradient-to-b from-gray-50 to-white rounded-xl p-8 shadow-lg card-hover">
+                <div class="relative mb-8">
+                    <div class="absolute inset-0 bg-blue-600/10 rounded-full transform rotate-6"></div>
+                    <img src="/api/placeholder/200/200" alt="Harshini" class="rounded-full w-32 h-32 mx-auto relative img-hover"/>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-center gradient-text">Harshini</h3>
+                <p class="text-blue-600 mb-4 text-center font-medium">Co-founder & Research Lead</p>
+                <p class="text-gray-600 mb-4">With a background in healthcare technology, Harshini witnessed firsthand the challenges faced by young diabetic patients. Her expertise in healthcare research and passion for improving patient outcomes drives our research initiatives.</p>
+                <p class="text-gray-600">Her vision for Insulocarb emerged from countless conversations with families at the Diabetic Child Society, understanding their daily struggles with diabetes management.</p>
+            </div>
+
+            <div class="bg-gradient-to-b from-gray-50 to-white rounded-xl p-8 shadow-lg card-hover">
+                <div class="relative mb-8">
+                    <div class="absolute inset-0 bg-blue-600/10 rounded-full transform -rotate-6"></div>
+                    <img src="/api/placeholder/200/200" alt="Ashrita" class="rounded-full w-32 h-32 mx-auto relative img-hover"/>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-center gradient-text">Ashrita</h3>
+                <p class="text-blue-600 mb-4 text-center font-medium">Co-founder & Technical Lead</p>
+                <p class="text-gray-600 mb-4">Ashrita brings deep expertise in AI and machine learning to Insulocarb. Her innovative work in computer vision and predictive analytics forms the technical foundation of our solution.</p>
+                <p class="text-gray-600">She leads our AI development, focusing on creating algorithms that can accurately predict glucose responses and optimize insulin timing.</p>
+            </div>
+
+            <div class="bg-gradient-to-b from-gray-50 to-white rounded-xl p-8 shadow-lg card-hover">
+                <div class="relative mb-8">
+                    <div class="absolute inset-0 bg-blue-600/10 rounded-full transform rotate-6"></div>
+                    <img src="/api/placeholder/200/200" alt="Venkata" class="rounded-full w-32 h-32 mx-auto relative img-hover"/>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-center gradient-text">Venkata</h3>
+                <p class="text-blue-600 mb-4 text-center font-medium">Co-founder & Product Lead</p>
+                <p class="text-gray-600 mb-4">Venkata's background in product development and user experience design ensures that our technology remains accessible and user-friendly for both children and caregivers.</p>
+                <p class="text-gray-600">His focus on creating intuitive interfaces has been crucial in making complex technology accessible to young users.</p>
+            </div>
+        </div>
+
+        <!-- Mission Statement -->
+        <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-12 text-center max-w-4xl mx-auto shadow-xl card-hover">
+            <h3 class="text-2xl font-bold mb-6 gradient-text">Our Mission</h3>
+            <p class="text-gray-600 text-lg mb-12">Together, we're building more than just a technology solution - we're creating a support system that empowers children with Type 1 diabetes to live healthier, more confident lives. Our partnership with the Diabetic Child Society of Visakhapatnam strengthens our commitment to making a real difference in our community.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-3xl font-bold text-blue-600 mb-2 counter" data-target="100">0+</div>
+                    <p class="text-gray-600 font-medium">Families Supported</p>
+                </div>
+                <div class="text-center card-hover bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-3xl font-bold text-blue-600 mb-2 counter" data-target="85">0%</div>
+                    <p class="text-gray-600 font-medium">Accuracy Rate</p>
+                </div>
+                <div class="text-center card-hover bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">24/7</div>
+                    <p class="text-gray-600 font-medium">Support System</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Technology Overview Section -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">Innovative Technology</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="relative animate-on-scroll">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl transform rotate-3 opacity-10"></div>
+                <img src="/api/placeholder/600/400" alt="Insulocarb Technology Demo" class="relative rounded-2xl shadow-xl img-hover"/>
+            </div>
+            <div class="space-y-8">
+                <p class="text-gray-600 text-lg mb-6">Insulocarb is pioneering AI-powered nutrition analysis and insulin timing technology specifically designed for Type 1 diabetics. Our comprehensive system combines augmented reality, machine learning, and continuous glucose monitoring to revolutionize diabetes management.</p>
+                <div class="space-y-6">
+                    <!-- Feature 1 -->
+                    <div class="flex items-start space-x-4 card-hover bg-white p-6 rounded-xl shadow-md">
+                        <div class="flex-shrink-0">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full p-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2 gradient-text">Precise Volume Estimation</h3>
+                            <p class="text-gray-600">Advanced AR technology accurately measures food portions, eliminating guesswork in carbohydrate counting.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex items-start space-x-4 card-hover bg-white p-6 rounded-xl shadow-md">
+                        <div class="flex-shrink-0">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full p-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2 gradient-text">Predictive Analysis</h3>
+                            <p class="text-gray-600">AI models analyze meal composition and CGM data to forecast glucose responses with high accuracy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex items-start space-x-4 card-hover bg-white p-6 rounded-xl shadow-md">
+                        <div class="flex-shrink-0">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full p-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2 gradient-text">Intelligent Timing</h3>
+                            <p class="text-gray-600">Smart algorithms recommend optimal insulin dosing times based on individual metabolic patterns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Research Section -->
+<section id="research" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">Our Research Focus</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Research Area 1 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <div class="bg-gradient-to-r from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition-transform hover:scale-110">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-center gradient-text">AR Food Analysis</h3>
+                <p class="text-gray-600 text-center">Developing accurate food volume estimation using augmented reality to help children and parents better understand portion sizes.</p>
+            </div>
+
+            <!-- Research Area 2 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <div class="bg-gradient-to-r from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition-transform hover:scale-110">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-center gradient-text">Glucose Prediction</h3>
+                <p class="text-gray-600 text-center">Creating machine learning models that predict glucose responses in children, accounting for their unique metabolic patterns.</p>
+            </div>
+
+            <!-- Research Area 3 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                <div class="bg-gradient-to-r from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition-transform hover:scale-110">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-center gradient-text">Smart Timing</h3>
+                <p class="text-gray-600 text-center">Optimizing insulin administration timing through advanced algorithms and personalized metabolic pattern analysis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Demo Section -->
+<section class="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">See Insulocarb in Action</h2>
+        <div class="max-w-4xl mx-auto">
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl transform rotate-2 opacity-10"></div>
+                <div class="relative aspect-w-16 aspect-h-9 bg-gray-100 rounded-2xl shadow-xl overflow-hidden">
+                    <div class="w-full h-96 bg-gray-200 flex items-center justify-center card-hover">
+                        <div class="text-center">
+                            <div class="bg-blue-600/10 p-8 rounded-full mb-4 inline-block">
+                                <svg class="w-16 h-16 text-blue-600 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-500 font-medium">Watch Demo Video</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p class="text-gray-600 text-lg">Watch how Insulocarb uses AR and AI to revolutionize diabetes management for children.</p>
+                <button class="mt-6 btn-primary">Watch Full Demo</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">Get in Touch</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-xl shadow-xl card-hover">
+                <h3 class="text-2xl font-bold mb-8 gradient-text">Send us a Message</h3>
+                <form class="space-y-6">
+                    <div class="space-y-2">
+                        <label class="block text-gray-700 font-medium" for="name">Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300" 
+                            placeholder="Your name"
+                        >
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-gray-700 font-medium" for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300" 
+                            placeholder="your@email.com"
+                        >
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-gray-700 font-medium" for="subject">Subject</label>
+                        <select 
+                            id="subject" 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                        >
+                            <option>Research Participation</option>
+                            <option>Partnership Inquiry</option>
+                            <option>General Question</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-gray-700 font-medium" for="message">Message</label>
+                        <textarea 
+                            id="message" 
+                            rows="4" 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300" 
+                            placeholder="Your message"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-2xl font-bold mb-6 gradient-text">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-3 rounded-full">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Email</p>
+                                <a href="mailto:research@insulocarb.com" class="text-blue-600 hover:text-blue-700 transition-colors">research@insulocarb.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-3 rounded-full">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Email</p>
+                                    <p class="text-blue-600">research@insulocarb.com</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="contact-item">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-3 rounded-full">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Location</p>
+                                    <p class="text-gray-600">Visakhapatnam, India</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Research Partnership Card -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                            <h3 class="text-2xl font-bold mb-6 gradient-text">Research Partnership</h3>
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg transform rotate-1 opacity-10"></div>
+                                <img src="/api/placeholder/200/100" alt="Diabetic Child Society Logo" class="relative rounded-lg mb-4"/>
+                            </div>
+                            <p class="text-gray-600 mb-4">In partnership with Diabetic Child Society Visakhapatnam</p>
+                            <a href="#" class="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold group">
+                                <span>Learn more about our partnership</span>
+                                <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+    
+                        <!-- Join Research Card -->
+                        <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-xl shadow-lg text-white">
+                            <h3 class="text-2xl font-bold mb-6">Join Our Research</h3>
+                            <p class="mb-6">We're currently accepting participants for our research studies. If you're interested in contributing to the advancement of diabetes care, we'd love to hear from you.</p>
+                            <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300">
+                                Learn More About Participation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <!-- Company Info -->
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold gradient-text mb-4">Insulocarb</h3>
+                        <p class="text-gray-400">Innovating diabetes care through research and technology. Making a difference in the lives of children with Type 1 diabetes.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#research" class="text-gray-400 hover:text-white transition-colors">Research</a></li>
+                            <li><a href="#team" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+                            <li><a href="#partnership" class="text-gray-400 hover:text-white transition-colors">Partnership</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Contact Info -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400">Email: research@insulocarb.com</li>
+                            <li class="text-gray-400">Location: Visakhapatnam, India</li>
+                        </ul>
+                    </div>
+    
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Stay Updated</h4>
+                        <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest research updates.</p>
+                        <form class="space-y-2">
+                            <input 
+                                type="email" 
+                                placeholder="Your email"
+                                class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                            >
+                            <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Bottom Bar -->
+                <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                    <p>&copy; 2025 Insulocarb. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Scripts -->
+        <script src="script.js"></script>
+    </body>
+    </html>
