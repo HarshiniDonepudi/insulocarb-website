@@ -1,12 +1,12 @@
 
 
-// Sticky Navbar on Scroll
-window.addEventListener("scroll", function () {
-    const navbar = document.querySelector("nav");
+ // Navbar scroll effect
+ window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.nav-wrapper');
     if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
+        nav.classList.add('scrolled');
     } else {
-        navbar.classList.remove("scrolled");
+        nav.classList.remove('scrolled');
     }
 });
 
@@ -35,40 +35,20 @@ function toggleMobileMenu() {
     document.getElementById("mobileMenu").classList.toggle("show");
 }
 
-// Scroll Fade-in Animation
-const fadeInElements = document.querySelectorAll('.animate-on-scroll');
+// // Scroll Fade-in Animation
+// const fadeInElements = document.querySelectorAll('.animate-on-scroll');
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-        }
-    });
-});
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('fade-in');
+//         }
+//     });
+// });
 
 fadeInElements.forEach(el => observer.observe(el));
 
-// Counter Animation (Stats Section)
-document.addEventListener("DOMContentLoaded", function () {
-    const counters = document.querySelectorAll(".counter");
-    const speed = 200;
 
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute("data-target");
-            const count = +counter.innerText;
-            const increment = target / speed;
-
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 30);
-            } else {
-                counter.innerText = target;
-            }
-        };
-        updateCount();
-    });
-});
 
 // Form Validation for Contact Form
 document.querySelector("#contact form").addEventListener("submit", function (e) {
