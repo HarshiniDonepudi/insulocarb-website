@@ -10,11 +10,7 @@
 </head>
 <body class="bg-gray-50">
     <!-- Mobile Menu -->
-    <button class="menu-toggle" onclick="toggleMobileMenu()">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-    </button>
+   
     
     <!-- Mobile Menu Overlay -->
     <div id="mobileMenu" class="mobile-menu">
@@ -32,6 +28,12 @@
     <nav class="nav-wrapper">
         <div class="navbar">
             <div class="nav-content">
+                
+                <button class="menu-toggle" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
                 <div class="nav-brand">
                     <div class="nav-brand-icon">
                         <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -845,6 +847,11 @@
                 // Prevent scrolling when menu is open
                 document.body.style.overflow = mobileMenu.classList.contains('show') ? 'hidden' : 'auto';
             }
+            
+            // Optional: Close menu when a link is clicked
+            document.querySelectorAll('.mobile-menu a').forEach(link => {
+                link.addEventListener('click', toggleMobileMenu);
+            });
             </script>
     </body>
     </html>
