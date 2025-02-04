@@ -1711,6 +1711,7 @@ body {
         position: relative;
         border-radius: 1rem;
         transition: transform 0.3s ease;
+       
     }
 
     .tech-image-wrapper::before {

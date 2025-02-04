@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insulocarb - AI-Powered Diabetes Management Research</title>
+    <title>Insulocarb - AI-Powered Diabetes Management App</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,11 +18,13 @@
                 </svg>
             </button>
             <div class="flex flex-col space-y-4 mt-16 items-center">
-                <a href="#motivation" class="text-white text-lg">Our Story</a>
-                <a href="#research" class="text-white text-lg">Research</a>
+                <a href="#motivation" class="text-white text-lg">Motivation</a>
+                <a href="#tech" class="text-white text-lg">Technology</a>
                 <a href="#team" class="text-white text-lg">Team</a>
-                <a href="#partnership" class="text-white text-lg">Partnership</a>
-                <button class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300">Contact Us</button>
+                <a href="#demo" class="text-white text-lg">Partnership</a>
+                <a href="#contact">
+                    <button class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300">Contact Us</button>
+                </a>
             </div>
         </div>
     </div>
@@ -39,11 +41,12 @@
                     Insulocarb
                 </div>
                 <div class="nav-links">
-                    <a href="#motivation-section" class="nav-link">Our Story</a>
-                    <a href="#research-section" class="nav-link">Research</a>
+                    <a href="#motivation" class="nav-link">Motivation</a>
+                    <a href="#tech" class="nav-link">Technology</a>
                     <a href="#team" class="nav-link">Team</a>
-                    <a href="#partnership" class="nav-link">Partnership</a>
-                    <button class="nav-button">Contact Us</button>
+                    <a href="#demo" class="nav-link">Demo</a>
+                    <a href="#contact"><button class="nav-button">Contact Us</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -57,8 +60,11 @@
                     <h1 class="hero-title">Revolutionizing Diabetes Management for Children</h1>
                     <p class="hero-description">In partnership with Diabetic Child Society Visakhapatnam, we're developing AI-powered solutions to improve the lives of children with Type 1 diabetes.</p>
                     <div class="hero-buttons">
-                        <button class="hero-button-primary">Learn More</button>
-                        <button class="hero-button-secondary">Join Our Mission</button>
+                        <a href="#motivation">
+                            
+                        <button class="hero-button-primary">Learn More</button></a>
+                        <a href="#contact">
+                        <button class="hero-button-secondary">Join Our Mission</button></a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
@@ -117,15 +123,7 @@
                     <div class="stat-value count-up" data-target="100">0</div>
                     <div class="stat-label">Children Supported</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                        </svg>
-                    </div>
-                    <div class="stat-value count-up" data-target="85">0</div>
-                    <div class="stat-label">Accuracy Rate</div>
-                </div>
+               
                 <div class="stat-card">
                     <div class="stat-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -143,7 +141,7 @@
                             <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                         </svg>
                     </div>
-                    <div class="stat-value count-up" data-target="3">0</div>
+                    <div class="stat-value count-up" data-target="10">0</div>
                     <div class="stat-label">Research Papers</div>
                 </div>
             </div>
@@ -152,7 +150,7 @@
 
         
 <!-- Motivation Section -->
-<section class="motivation-section">
+<section id ="motivation"class="motivation-section">
     <div class="container">
         <h2 class="section-title">
             <span>Our Motivation</span>
@@ -160,28 +158,30 @@
         <div class="motivation-cards">
             <div class="motivation-card">
                 <div class="card-number">01</div>
-                <p class="card-content">The journey of Insulocarb began when we witnessed the daily challenges faced by children with Type 1 diabetes. Managing insulin doses, tracking food intake, and predicting glucose responses can be overwhelming, especially for young patients and their families.</p>
+                <p class="card-content">
+                    Over 8.75 million people live with Type 1 diabetes and counting each year. Managing it is a constant challenge—carb counting errors (30-50%) make insulin dosing unpredictable, and 60% of complications stem from poor meal-insulin timing, causing dangerous highs and lows. Carb miscalculations drive 70% of post-meal spikes, increasing the risk of future dependent complications. The relentless cycle of tracking and correcting leads to diabetes burnout in 80% of patients, adding to the daily struggle of balancing school, work, and life.
+                </p></p>
             </div>
 
             <div class="motivation-card">
                 <div class="card-number">02</div>
-                <p class="card-content">Through our partnership with Diabetic Child Society Visakhapatnam, we discovered that many children struggle with maintaining stable blood glucose levels due to the complexity of diabetes management. This inspired us to develop an innovative solution that combines artificial intelligence with augmented reality to simplify and improve diabetes care.</p>
+                <p class="card-content">Despite advancements in digital health, current diabetes management tools fall short. Carb counting apps lack AI, forcing users to manually estimate food intake, leading to frequent miscalculations in insulin dosing. CGMs track blood sugar but fail to predict future spikes, leaving patients constantly reacting rather than planning ahead. Insulin dosing algorithms do not consider food composition, digestion speed, or metabolic variations, forcing individuals into a never-ending guessing game that heightens stress and increases health risks. Without smart, adaptive systems, diabetes remains an exhausting, high-stakes balancing act.</p>
             </div>
 
             <div class="motivation-card">
                 <div class="card-number">03</div>
-                <p class="card-content">Our mission is to empower children with Type 1 diabetes and their caregivers with intelligent tools that make diabetes management more accurate, less stressful, and more integrated into their daily lives.</p>
+                <p class="card-content">Our mission is to empower people with Type 1 diabetes and their caregivers with intelligent tools that make diabetes management more accurate, less stressful, and more integrated into their daily lives. We envision a world where Type 1 diabetes no longer controls lives—patients do. By harnessing cutting-edge technology, we are redefining diabetes care—making it smarter, more intuitive, and life-enhancing</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Team Section -->
-<section class="team-section">
+<section id ="team"class="team-section">
     <div class="container">
         <div class="section-header">
             <h2 class="section-title"style="left:100px">Our Story</h2>
-            <p class="section-description">"The journey of Insulocarb began right at home, where we faced the relentless reality of Type 1 diabetes every day. As a diabetic, the fear of getting it wrong—miscalculating a meal, mistiming insulin, or waking up to dangerously high or low blood sugar—was constant. As parents, the fear was different but just as overwhelming: watching over a child, wondering if they’d be okay through the night, worrying about every bite of food, and hoping you were doing enough.</p>
+            <p class="section-description">"The journey of Insulocarb began right at home, where we faced the relentless reality of Type 1 diabetes every day. For Harshini and Ashrita, the fear of getting it wrong—miscalculating a meal, mistiming insulin, or waking up to dangerously high or low blood sugar—was constant. For Venkata as a parent, the fear was different but just as overwhelming: watching over a child, wondering if they’d be okay through the night, worrying about every bite of food, and hoping you were doing enough.</p>
                <br>
                 <p class="section-description"> At first, we thought this struggle was just ours, but soon we realized that hundreds of children and families were trapped in the same exhausting cycle of uncertainty which we learnt when we wwere volunteering at Diabetic based organisations like ADA, Diabetic Chid society and td1findia . That fear fueled our mission—to create a smarter, more intuitive way to manage diabetes, one that removes the guesswork and gives back confidence. With relentless passion and cutting-edge technology, Insulocarb was born—not just as a tool, but we aim to make it a  movement to free families from the fear and empower every one with Type 1 diabetes to live boldly and without limits."</p>
         </div>
@@ -226,8 +226,8 @@
                     </div>
                     <p class="member-role">Co-founder & Technical Lead</p>
                     <div class="member-bio">
-                        <p class="mb-4">With extensive background in artificial intelligence and computer vision, Harshini leads our technical initiatives at Insulocarb. Her expertise in machine learning and computer science drives the development of our innovative glucose monitoring and prediction systems.</p>
-                        <p>She specializes in developing AI algorithms for medical image analysis and real-time data processing, crucial for our AR-based carbohydrate counting system.</p>
+                        <p class="mb-4">With extensive background in artificial intelligence, data science and computer vision, Harshini leads our technical initiatives at Insulocarb. Her expertise in machine learning, health technology and computer science drives the development of our innovative glucose monitoring and prediction systems.</p>
+                        <p>She specializes in developing AI algorithms for medical diagnostics, medical imaging and real-time data processing, crucial for our AR-based carbohydrate counting system.</p>
                     </div>
                 </div>
             </div>
@@ -285,12 +285,12 @@
 
 
 </section>
-<section class="section bg-gray">
+<section id ="tech"class="section bg-gray">
     <div class="container">
         <h2 class="section-title">Innovative Technology</h2>
         <div class="tech-grid">
             <div class="tech-image-wrapper">
-                <img src="/api/placeholder/600/400" alt="Insulocarb Technology Demo" class="tech-image"/>
+                <img src="images/Blank diagram.jpeg" alt="Insulocarb Technology Demo" class="tech-image"/>
             </div>
             <div class="tech-content">
                 <p class="tech-intro">
@@ -317,7 +317,7 @@
                         </div>
                         <div class="feature-content">
                             <h3>Predictive Analysis</h3>
-                            <p>AI models analyze meal composition and CGM data to forecast glucose responses with high accuracy.</p>
+                            <p>AI models analyze meal composition, make better food choices and CGM data to forecast glucose responses to foods.</p>
                         </div>
                     </div>
 
@@ -382,7 +382,7 @@
 </section>
 
 <!-- Video Demo Section -->
-<section class="section bg-gray">
+<section id = "demo"class="section bg-gray">
     <div class="container">
         <h2 class="section-title" style="margin-top: 50px">See Insulocarb in Action</h2>
         <div class="video-container">
@@ -403,55 +403,72 @@
     </div>
 </section>
 <!-- Contact Section -->
-<section class="contact-section">
+<section id ="contact"class="contact-section">
     <div class="contact-grid">
         <!-- Contact Form -->
-        <div class="contact-form-card">
-            <h2 class="text-2xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                Send us a Message
-            </h2>
-            <form>
-                <div class="form-group">
-                    <label class="form-label" for="name">Name</label>
-                    <input 
-                        type="text" 
-                        id="name" 
-                        class="form-input" 
-                        placeholder="Your name"
-                    >
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="email">Email</label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        class="form-input" 
-                        placeholder="your@email.com"
-                    >
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="subject">Subject</label>
-                    <select id="subject" class="form-input">
-                        <option>Research Participation</option>
-                        <option>Partnership Inquiry</option>
-                        <option>General Question</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="message">Message</label>
-                    <textarea 
-                        id="message" 
-                        rows="4" 
-                        class="form-input" 
-                        placeholder="Your message"
-                    ></textarea>
-                </div>
-                <button type="submit" class="submit-button">
-                    Send Message
-                </button>
-            </form>
-        </div>
+     
+                    <div class="contact-form-card">
+                        <h2 class="text-2xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent" style="padding-bottom:20px">
+                            Send us a Message
+                        </h2>
+                        <form method="POST" id="form" class="contact-form">
+                            <input type="hidden" name="access_key" value="5558b6c8-e4f1-4fc7-b130-4a2d63a1df1b">
+                            <input type="hidden" name="botcheck" class="hidden" style="display: none;">
+                        
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-input"
+                                    placeholder="Your name"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-input"
+                                    placeholder="your@email.com"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="subject">Subject</label>
+                                <select 
+                                    id="subject" 
+                                    name="subject" 
+                                    class="form-input"
+                                >
+                                    <option value="">Select a subject</option>
+                                    <option>Research Participation</option>
+                                    <option>Partnership Inquiry</option>
+                                    <option>General Question</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="4"
+                                    class="form-input"
+                                    placeholder="Your message"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                Send Message
+                            </button>
+                            <div id="result" class="form-status text-center mt-4"></div>
+                        </form>
+                    </div>
+       
 
         <!-- Contact Info -->
         <div class="contact-info">
@@ -467,8 +484,12 @@
                     </div>
                     <div>
                         <p class="font-semibold">Email</p>
-                        <a href="mailto:research@insulocarb.com" class="text-blue-600 hover:text-blue-700">
-                            research@insulocarb.com
+                        <a href="mailto:hsd39@cornell.com" class="text-blue-600 hover:text-blue-700">
+                            hsd39@cornell.edu
+                        </a>
+                        <p class="font-semibold"></p>
+                        <a href="mailto:insulocarb@gmail.com" class="text-blue-600 hover:text-blue-700">
+                            insulocarb@gmail.com
                         </a>
                     </div>
                 </div>
@@ -481,6 +502,7 @@
                     </div>
                     <div>
                         <p class="font-semibold">Location</p>
+                        <p class="text-gray-600">Roosevelt Island, New York</p>
                         <p class="text-gray-600">Visakhapatnam, India</p>
                     </div>
                 </div>
@@ -508,9 +530,11 @@
                     We're currently looking for type 1 diabetics to further understand their needs for User Interviews and health tech enthusiasts looking to make an impact in this feild. If you're interested in contributing to the advancement of diabetes care, we'd love to hear from you.
                 </p>
                 <div style="padding-top:20px">
+                    <a href="#contact">
                 <button class="submit-button">
-                    Learn More 
+                    Chat with us
                 </button>
+            </a>
             </div>
             </div>
         </div>
@@ -526,23 +550,7 @@
             <p class="text-gray-400 mb-6">
                 Innovating diabetes care through research and technology. Making a difference in the lives of children with Type 1 diabetes.
             </p>
-            <div class="social-links">
-                <a href="#" class="social-link">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
-                    </svg>
-                </a>
-                <a href="#" class="social-link">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                    </svg>
-                </a>
-                <a href="#" class="social-link">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                    </svg>
-                </a>
-            </div>
+          
         </div>
 
         <!-- Quick Links -->
@@ -753,6 +761,81 @@
                     observer3.observe(el);
                 });
             });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const form = document.getElementById('form');
+                const result = document.getElementById('result');
+            
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Disable submit button and change text
+                    const submitButton = form.querySelector('.submit-button');
+                    submitButton.disabled = true;
+                    submitButton.textContent = 'Sending...';
+            
+                    // Clear previous messages
+                    result.textContent = 'Please wait...';
+                    result.className = 'form-status text-center mt-4 text-blue-600';
+            
+                    // Prepare form data
+                    const formData = new FormData(form);
+                    
+                    // Manually construct the payload
+                    const payload = {
+                        access_key: formData.get('access_key'),
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        subject: formData.get('subject') || 'No Subject',
+                        message: formData.get('message')
+                    };
+            
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    })
+                    .then(async (response) => {
+                        try {
+                            let json = await response.json();
+                            
+                            if (response.ok) {
+                                result.textContent = "Form submitted successfully";
+                                result.className = 'form-status text-center mt-4 text-green-600';
+                                form.reset();
+                            } else {
+                                console.log(response);
+                                result.textContent = json.message || "Submission failed";
+                                result.className = 'form-status text-center mt-4 text-red-600';
+                            }
+                        } catch (parseError) {
+                            console.error('Error parsing response:', parseError);
+                            result.textContent = "Unable to process server response";
+                            result.className = 'form-status text-center mt-4 text-red-600';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Fetch error:', error);
+                        result.textContent = "Something went wrong! Please try again.";
+                        result.className = 'form-status text-center mt-4 text-red-600';
+                    })
+                    .finally(() => {
+                        // Re-enable submit button
+                        submitButton.disabled = false;
+                        submitButton.textContent = 'Send Message';
+            
+                        // Hide message after 3 seconds
+                        setTimeout(() => {
+                            result.textContent = '';
+                        }, 3000);
+                    });
+                });
+            });
+     
         </script>
     </body>
     </html>
