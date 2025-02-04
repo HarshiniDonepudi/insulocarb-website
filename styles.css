@@ -1319,24 +1319,7 @@ body {
     right: 0;
 }
 
-@media (max-width: 1024px) {
-    .nav-links {
-        display: none;
-    }
 
-    .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .hero-image-wrapper {
-        margin-top: 2rem;
-    }
-}
 /* Sticky Navbar Effect on Scroll */
 .scrolled {
     background: rgba(255, 255, 255, 0.95);
@@ -1937,61 +1920,205 @@ body {
         }
     }
     /* Responsive Design */
-@media (max-width: 1024px) {
+/* Apple Device Responsive Design */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+        padding-top: 3rem;
+        min-height: auto;
+    }
+
+    .hero-container {
+        padding: 1rem;
+    }
+
     .hero-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
         text-align: center;
     }
 
-    .hero-image-wrapper {
-        order: -1;
-        margin-bottom: 2rem;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .glucose-icon.left,
-    .glucose-icon.right {
-        display: none;
-    }
-
-    .hero-image {
-        margin: 0 !important;
+    .hero-content {
+        order: 1;
+        padding: 0 1rem;
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.3;
     }
 
     .hero-description {
         font-size: 1rem;
-    }
-}
-
-@media (max-width: 640px) {
-    .hero-section {
-        padding: 1rem;
-    }
-
-    .hero-title {
-        font-size: 2rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
     }
 
     .hero-buttons {
         flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
 
-    .hero-button-primary, 
+    .hero-button-primary,
     .hero-button-secondary {
         width: 100%;
+        max-width: 300px;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
     }
 
-    .hero-image-bg, 
+    .hero-image-wrapper {
+        order: 2;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hero-image-bg,
     .hero-image-bg-2 {
+        display: none;
+    }
+
+    .glucose-icon {
         display: none;
     }
 }
 
+/* Specific iPhone Models */
+/* iPhone 12/13 Pro Max */
+@media only screen 
+  and (min-device-width: 428px)
+  and (max-device-width: 428px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* iPhone SE */
+@media only screen 
+  and (min-device-width: 375px)
+  and (max-device-width: 375px) 
+  and (min-device-height: 667px)
+  and (max-device-height: 667px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* iPad Specific */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+        padding-top: 4rem;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .hero-content {
+        order: 0;
+        padding-left: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .hero-button-primary,
+    .hero-button-secondary {
+        width: auto;
+        max-width: none;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .hero-image-wrapper {
+        order: 1;
+    }
+}
+
+/* Mobile Menu for Apple Devices */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+        background: none;
+        border: none;
+        color: white;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(30, 58, 138, 0.95);
+        z-index: 1100;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-menu a,
+    .mobile-menu button {
+        color: white;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+    }
+
+    .mobile-menu .close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        z-index: 1200;
+    }
+}

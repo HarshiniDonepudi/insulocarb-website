@@ -10,23 +10,23 @@
 </head>
 <body class="bg-gray-50">
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="fixed inset-0 bg-blue-900/90 z-50 mobile-menu hidden lg:hidden">
-        <div class="p-4">
-            <button onclick="toggleMobileMenu()" class="text-white float-right">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-            <div class="flex flex-col space-y-4 mt-16 items-center">
-                <a href="#motivation" class="text-white text-lg">Motivation</a>
-                <a href="#tech" class="text-white text-lg">Technology</a>
-                <a href="#team" class="text-white text-lg">Team</a>
-                <a href="#demo" class="text-white text-lg">Partnership</a>
-                <a href="#contact">
-                    <button class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300">Contact Us</button>
-                </a>
-            </div>
-        </div>
+    <button class="menu-toggle" onclick="toggleMobileMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="mobile-menu">
+        <button class="close-btn" onclick="toggleMobileMenu()">
+            &times;
+        </button>
+        <a href="#home">Home</a>
+        <a href="#motivation">Our Story</a>
+        <a href="#research">Research</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+        <button class="btn-primary">Get Started</button>
     </div>
 
     <nav class="nav-wrapper">
@@ -837,5 +837,14 @@
             });
      
         </script>
+        <script>
+            function toggleMobileMenu() {
+                const mobileMenu = document.getElementById('mobileMenu');
+                mobileMenu.classList.toggle('show');
+                
+                // Prevent scrolling when menu is open
+                document.body.style.overflow = mobileMenu.classList.contains('show') ? 'hidden' : 'auto';
+            }
+            </script>
     </body>
     </html>
