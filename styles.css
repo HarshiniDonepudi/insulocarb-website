@@ -1361,20 +1361,28 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+.contact-icon {
+    background-color: #f3f4f6; /* Light gray background */
+    border-radius: 50%; /* Circular shape */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.contact-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #3B82F6; /* Blue color for icons */
+    stroke-width: 2;
+}
+
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.contact-icon {
-    background: #f3f4f6;
-    padding: 0.75rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .partnership-card {
