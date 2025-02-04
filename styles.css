@@ -1394,201 +1394,123 @@ body {
 
 
 
+/* Contact Section Responsive Design */
 .contact-section {
-    background: linear-gradient(to bottom, #f8faff, #ffffff);
-    padding: 6rem 0;
-    position: relative;
-    overflow: hidden;
+    padding: 2rem 1rem;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
 }
 
+/* Contact Form Card */
 .contact-form-card {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 2.5rem;
-    box-shadow: 
-        0 4px 20px rgba(0, 0, 0, 0.05),
-        0 8px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.contact-form-card:hover {
-    transform: translateY(-5px);
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .form-label {
     display: block;
-    font-weight: 500;
     margin-bottom: 0.5rem;
-    color: #4b5563;
+    font-weight: 500;
 }
 
 .form-input {
     width: 100%;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem;
     border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    transition: all 0.3s ease;
+    border-radius: 8px;
     font-size: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-}
-
-.form-input:focus {
-    outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-    background: white;
 }
 
 .submit-button {
     width: 100%;
-    padding: 1rem;
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    padding: 0.75rem;
+    background: linear-gradient(to right, #3B82F6, #2563EB);
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.submit-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-}
-
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: grid;
+    gap: 1rem;
 }
 
-.info-card {
+.info-card, 
+.partnership-card {
     background: white;
-    border-radius: 20px;
+    border-radius: 12px;
     padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(59, 130, 246, 0.1);
-}
-
-.info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    border-color: rgba(59, 130, 246, 0.2);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .contact-icon {
-    width: 48px;
-    height: 48px;
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
-    border-radius: 12px;
+    background: #f3f4f6;
+    padding: 0.75rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    flex-shrink: 0;
 }
 
 .partnership-card {
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    background: linear-gradient(to right, #3B82F6, #2563EB);
     color: white;
-    padding: 2rem;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
 }
 
-.partnership-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-        45deg,
-        transparent 0%,
-        rgba(255, 255, 255, 0.1) 50%,
-        transparent 100%
-    );
-    transform: rotate(45deg);
-    animation: shine 3s infinite;
+.partnership-card img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
-@keyframes shine {
-    0% { transform: rotate(45deg) translateY(-100%); }
-    100% { transform: rotate(45deg) translateY(100%); }
-}
-
-/* Footer Styles */
+/* Footer Responsive Design */
 .footer {
-    background: linear-gradient(to bottom, #1e293b, #0f172a);
+    background: #111827;
     color: white;
-    padding: 5rem 0 2rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.3),
-        transparent
-    );
+    padding: 2rem 1rem;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
-    gap: 4rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
 }
 
 .footer-brand h3 {
     font-size: 1.5rem;
-    font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #60a5fa, #3b82f6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
 }
 
 .footer-links h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
     color: white;
-    font-size: 1.125rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
 }
 
 .footer-links ul {
@@ -1596,107 +1518,93 @@ body {
     padding: 0;
 }
 
-.footer-links li {
-    margin-bottom: 0.75rem;
+.footer-links ul li {
+    margin-bottom: 0.5rem;
 }
 
-.footer-links a {
-    color: #94a3b8;
+.footer-links ul li a {
+    color: #9CA3AF;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
+.footer-links ul li a:hover {
     color: white;
-    transform: translateX(5px);
 }
 
 .newsletter-form {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 }
 
 .newsletter-input {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.75rem;
+    border: 1px solid #374151;
     border-radius: 8px;
+    background: #1F2937;
     color: white;
-    transition: all 0.3s ease;
-}
-
-.newsletter-input:focus {
-    outline: none;
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .newsletter-button {
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    padding: 0.75rem;
+    background: #3B82F6;
+    color: white;
     border: none;
     border-radius: 8px;
-    color: white;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.newsletter-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    margin-top: 4rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #94a3b8;
+    border-top: 1px solid #374151;
+    color: #9CA3AF;
 }
 
-.social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.social-link {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.social-link:hover {
-    background: #3b82f6;
-    transform: translateY(-2px);
-}
-
-@media (max-width: 1024px) {
+/* Responsive Adjustments */
+@media (min-width: 640px) {
     .contact-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 640px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
+@media (min-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
     }
-    
-    .newsletter-form {
-        flex-direction: column;
+
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    .contact-form-card,
+    .info-card,
+    .partnership-card {
+        padding: 1rem;
+    }
+
+    .contact-form-card h2,
+    .info-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .form-input,
+    .submit-button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .contact-icon {
+        padding: 0.5rem;
     }
 }
       /* Technology Overview */
